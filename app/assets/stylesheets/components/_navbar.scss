@@ -1,0 +1,50 @@
+.navbar {
+  padding-top: 2em;
+  background: none !important;
+  font-family: 'Raleway', sans-serif;
+
+  .navbar-brand {
+    margin-top: -.35em;
+  }
+
+  .navbar-nav {
+    padding-left: 2em;
+
+    .nav-item {
+      padding: 0 1em;
+  
+      .nav-link {
+        padding: 0;
+        color: $color-grey;
+        letter-spacing: 1px;
+        
+        &:hover {
+          font-weight: 600;
+          border-bottom: 2px solid $color-orange;
+        }
+      }
+  
+      .btn-outline-warning {
+        margin-top: -.5em;
+        padding: .5rem 2rem;
+        border-radius: 30px;
+        color: $color-orange;
+        border-color: $color-orange;
+  
+        &:hover {
+          color: $color-white;
+          background-color: $color-orange;
+        }
+      }
+  
+      &.active {
+        .nav-link {
+          font-weight: 600;
+          color: $color-blue;
+          border-bottom: 2px solid $color-blue;
+        }
+      }
+    }
+  }
+
+}
