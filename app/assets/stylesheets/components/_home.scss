@@ -1,0 +1,71 @@
+.home {
+  .about-us {
+    .bg-top {
+      width: 100%;
+    }
+
+    .bg-bottom {
+      width: 100%;
+      margin-top: -1px;
+    }
+
+    .content {
+      margin-top: -5px;
+      padding: 2em 3em 4em;
+
+      background-color: $color-light-blue;
+      color: $color-white;
+
+      .team {
+        width: auto;
+        height: 450px;
+      }
+
+      .description-wrapper {
+        padding: 0 5em;
+
+        > .title {
+          font-size: 55px;
+          font-weight: bold;
+          letter-spacing: 3px;
+        }
+  
+        > .description {
+          padding-top: 1em;
+          font-size: 20px;
+          font-weight: 300;
+          line-height: 1.68em;
+        }
+        
+        > .actions {
+          padding-top: 3em;
+
+          .btn {
+            font-size: 25px;
+            font-weight: 300;
+
+            &:hover {
+              color: $color-light-blue;
+            }
+          }
+
+          .social {
+            .title {
+              color: rgba($color-white, 0.62);
+            }
+            
+            .medias {
+              padding-top: .75em;
+
+              i {
+                padding-right: 1em;
+                font-size: 20px;
+                color: $color-medium-blue;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

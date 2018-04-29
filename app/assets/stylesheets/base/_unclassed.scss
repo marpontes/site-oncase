@@ -1,3 +1,11 @@
 body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   color: $color-grey;
+  font-family: 'Assistant', sans-serif;
+}
+
+main {
+  flex: 1;
 }

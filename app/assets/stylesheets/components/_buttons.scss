@@ -1,0 +1,13 @@
+.btn {
+  border-radius: 40px;
+  padding: .5rem 2rem;
+}
+
+.btn-outline-white {
+  border-color: $color-white;
+  color: $color-white;
+
+  &:hover {
+    background-color: $color-white;
+  }
+}
