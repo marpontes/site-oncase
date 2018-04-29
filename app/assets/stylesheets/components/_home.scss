@@ -70,7 +70,7 @@
   }
 
   .experts {
-    padding-top: 3em;
+    padding: 3em 0 5em;
     position: relative;
 
     .content {
@@ -134,6 +134,24 @@
       top: 25em;
       right: -15em;
       z-index: -1;
+    }
+  }
+
+  .clients {
+    padding: 4em 0;
+    background-color: $color-light-grey;
+
+    .content {
+      font-size: 20px;
+      font-weight: 300;
+
+      .logos {
+        padding-top: 2em;
+  
+        img {
+          padding-right: 2em;
+        }
+      }
     }
   }
 }

@@ -4,6 +4,7 @@ body {
   flex-direction: column;
   color: $color-grey;
   font-family: 'Assistant', sans-serif;
+  overflow-x: hidden;
 }
 
 main {
