@@ -1,19 +1,12 @@
 footer {
-  height: 600px;
-  margin-left: -2px;
-  
-  background-image: image-url('bg-footer.png');
-  background-repeat: no-repeat;
-  background-size: cover;
+  margin-top: -2px;
+  padding: 3em 0;
 
+  background-color: $color-blue;
   color: $color-white;
 
   .address {
     font-weight: 300;
-  }
-
-  .wrapper {
-    padding-top: 10em;
   }
 
   .list {

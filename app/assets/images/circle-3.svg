@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1091.206 1091.211">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: 0.15;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #4277ce;
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+  <g id="diagram" transform="translate(-1194.937 -2588.5)">
+    <g id="diagram-2" data-name="diagram" class="cls-1" transform="translate(1195.437 2589)">
+      <ellipse id="Ellipse_21" data-name="Ellipse 21" class="cls-2" cx="545.103" cy="545.105" rx="545.103" ry="545.105" transform="translate(0 0)"/>
+      <ellipse id="Ellipse_22" data-name="Ellipse 22" class="cls-2" cx="363.402" cy="363.404" rx="363.402" ry="363.404" transform="translate(181.701 363.404)"/>
+      <ellipse id="Ellipse_23" data-name="Ellipse 23" class="cls-2" cx="181.701" cy="181.702" rx="181.701" ry="181.702" transform="translate(363.402 726.807)"/>
+    </g>
+  </g>
+</svg>

@@ -130,9 +130,9 @@
     }
 
     .circle-2 {
-      width: 700px;
-      top: 25em;
-      right: -15em;
+      width: 500px;
+      right: -1px;
+      bottom: -2px;
       z-index: -1;
     }
   }
@@ -147,16 +147,13 @@
 
       .logos {
         padding-top: 2em;
-  
-        img {
-          padding-right: 2em;
-        }
       }
     }
   }
 
   .campus {
     padding-top: 3em;
+    position: relative;
 
     .content {
       > .title {
@@ -190,6 +187,14 @@
           font-weight: 300;
         }
       }
+    }
+
+    .circle-3 {
+      position: absolute;
+      width: 700px;
+      top: .5em;
+      left: -25em;
+      z-index: -1;
     }
   }
 }
