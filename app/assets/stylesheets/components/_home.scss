@@ -68,4 +68,72 @@
       }
     }
   }
+
+  .experts {
+    padding-top: 3em;
+    position: relative;
+
+    .content {
+      > .title {
+        font-size: 55px;
+        font-weight: bold;
+      }
+  
+      > .description {
+        width: 700px;
+        padding-top: 1em;
+  
+        font-size: 20px;
+        font-weight: 300;
+      }
+  
+      .services {
+        padding: 3em 5em;
+
+        .service {
+          .description-wrapper {
+            padding-left: 2em;
+          }
+
+          .title {
+            font-weight: 800;
+            font-size: 35px;
+          }
+
+          .description {
+            font-size: 20px;
+            font-weight: 300;
+            max-width: 400px;
+          }
+        }
+      }
+
+      .actions {
+        padding-top: 3em;
+
+        .btn {
+          font-size: 20px;
+          font-weight: 300;
+        }
+      }
+    }
+
+    .circle-1, .circle-2 {
+      position: absolute;
+    }
+
+    .circle-1 {
+      width: 500px;
+      top: 8em;
+      left: -10em;
+      z-index: -1;
+    }
+
+    .circle-2 {
+      width: 700px;
+      top: 25em;
+      right: -15em;
+      z-index: -1;
+    }
+  }
 }

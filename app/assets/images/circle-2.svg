@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1091.206 1364.711">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: 0.15;
+      }
+
+      .cls-2, .cls-3, .cls-5 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #4277ce;
+        stroke-linejoin: round;
+      }
+
+      .cls-3 {
+        stroke: #d239ff;
+        opacity: 0.17;
+      }
+
+      .cls-4 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Group_86" data-name="Group 86" transform="translate(-1161.937 -2333)">
+    <g id="Group_85" data-name="Group 85">
+      <g id="diagram" transform="translate(-33 18)">
+        <g id="diagram-2" data-name="diagram" class="cls-1" transform="translate(1195.437 2589)">
+          <ellipse id="Ellipse_21" data-name="Ellipse 21" class="cls-2" cx="545.103" cy="545.105" rx="545.103" ry="545.105" transform="translate(0 0)"/>
+          <ellipse id="Ellipse_22" data-name="Ellipse 22" class="cls-2" cx="363.402" cy="363.404" rx="363.402" ry="363.404" transform="translate(181.701 363.404)"/>
+          <ellipse id="Ellipse_23" data-name="Ellipse 23" class="cls-2" cx="181.701" cy="181.702" rx="181.701" ry="181.702" transform="translate(363.402 726.807)"/>
+        </g>
+      </g>
+    </g>
+    <g id="Symbol_1_1" data-name="Symbol 1 – 1">
+      <g id="Ellipse_76" data-name="Ellipse 76" class="cls-3" transform="translate(1622 2333)">
+        <circle class="cls-4" cx="205" cy="205" r="205"/>
+        <circle class="cls-5" cx="205" cy="205" r="204.5"/>
+      </g>
+    </g>
+  </g>
+</svg>

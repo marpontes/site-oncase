@@ -11,3 +11,12 @@
     background-color: $color-white;
   }
 }
+
+.btn-orange {
+  background-color: $color-orange;
+  color: $color-white;
+
+  &:hover {
+    color: $color-white;
+  }
+}
