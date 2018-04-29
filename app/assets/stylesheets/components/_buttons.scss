@@ -12,6 +12,33 @@
   }
 }
 
+.btn-outline-green {
+  border-color: $color-green;
+  color: $color-green;
+
+  &:hover {
+    background-color: $color-green;
+  }
+}
+
+.btn-outline-light-blue {
+  border-color: $color-light-blue;
+  color: $color-light-blue;
+
+  &:hover {
+    background-color: $color-light-blue;
+  }
+}
+
+.btn-outline-orange {
+  border-color: $color-orange;
+  color: $color-orange;
+
+  &:hover {
+    background-color: $color-orange;
+  }
+}
+
 .btn-orange {
   background-color: $color-orange;
   color: $color-white;

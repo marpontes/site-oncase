@@ -1,4 +1,8 @@
-<%= image_tag "bg-footer@2x.png", width: "101%", style: "margin-left: -2px", class: "mt-4" %>  
+<% if action_name == 'solutions' %>
+  <%= image_tag "bg-footer-alt@2x.png", width: "101%", style: "margin-left: -2px" %>  
+<% else %>
+  <%= image_tag "bg-footer@2x.png", width: "101%", style: "margin-left: -2px", class: "mt-4" %>  
+<% end %>
 
 <footer>
   <div class="container">
