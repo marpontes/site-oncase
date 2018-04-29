@@ -154,4 +154,42 @@
       }
     }
   }
+
+  .campus {
+    padding-top: 3em;
+
+    .content {
+      > .title {
+        font-size: 55px;
+        font-weight: bold;
+      }
+
+      > .video {
+        padding-top: 2em;
+      }
+
+      .description {
+        max-width: 500px;
+        padding-top: 1.5em;
+
+        font-size: 20px;
+        font-weight: 300;
+
+        .link-orange {
+          color: $color-orange;
+          font-weight: normal;
+          text-decoration: underline;
+        }
+      }
+
+      .actions {
+        padding-top: 3em;
+
+        .btn {
+          font-size: 20px;
+          font-weight: 300;
+        }
+      }
+    }
+  }
 }
