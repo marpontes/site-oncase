@@ -30,7 +30,7 @@
   }
 }
 
-.btn-outline-orange {
+.btn-outline-light-blue {
   border-color: $color-orange;
   color: $color-orange;
 
@@ -41,6 +41,15 @@
 
 .btn-orange {
   background-color: $color-orange;
+  color: $color-white;
+
+  &:hover {
+    color: $color-white;
+  }
+}
+
+.btn-light-blue {
+  background-color: $color-light-blue;
   color: $color-white;
 
   &:hover {

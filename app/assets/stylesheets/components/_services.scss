@@ -1,0 +1,112 @@
+.services-page {
+  padding-top: 3em;
+
+  > .content {
+    > .title {
+      font-family: 'Raleway', sans-serif;
+      font-size: 50px;
+      font-weight: 700;
+      line-height: 60px;
+    }
+
+    > .description {
+      max-width: 650px;
+      padding-top: 1em;
+  
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 1.618;
+    }
+
+    > .services {
+      padding: 3em 5em;
+
+      .service {
+        .description-wrapper {
+          padding-left: 2em;
+        }
+
+        .title {
+          font-weight: 800;
+          font-size: 35px;
+        }
+
+        .description {
+          font-size: 20px;
+          font-weight: 300;
+          max-width: 400px;
+        }
+      }
+    }
+
+    > .solutions-wrapper {
+      padding: 3em 5em;
+
+      .solution {
+        > .title {
+          padding-bottom: 1em;
+          text-align: right;
+          font-size: 50px;
+          font-weight: 200;
+        }
+
+        .short-description {
+          padding-left: 2em;
+          font-weight: 300;
+          font-size: 25px;
+        }
+        
+        .points {
+          padding-top: 2em;
+          
+          font-size: 20px;
+          font-weight: 300;
+          
+          .description {
+            font-weight: 200;
+          }
+          
+          .point {
+            width: 500px;
+          }
+        }
+
+        .actions {
+          padding-top: 3em;
+          font-size: 20px;
+          font-weight: 300;
+
+          .btn {
+            margin-top: 1em;
+            font-size: 20px;
+
+            &:hover {
+              color: $color-white;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  > .technologies {
+    padding: 3em 0 0;
+    margin-top: -1px;
+    background-color: $color-light-grey;
+
+    .content {
+      > .title {
+        font-weight: 800;
+        font-size: 35px;
+      }
+  
+      > .description {
+        max-width: 750px;
+        padding-top: .5em;
+  
+        font-size: 20px;
+        font-weight: 300;
+      }
+    }
+  }
+}

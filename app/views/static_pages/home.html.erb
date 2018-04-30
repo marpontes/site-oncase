@@ -1,6 +1,22 @@
 <div class="home">
+  <div class="slider pt-5 pb-5">
+    <div class="text-center"><%= image_tag 'banner1.png' %></div>
+    <div class="text-center"><%= image_tag 'banner1.png' %></div>
+    <div class="text-center"><%= image_tag 'banner1.png' %></div>
+    <div class="text-center"><%= image_tag 'banner1.png' %></div>
+  </div>
+  
   <%= render 'static_pages/home/about_us' %>
   <%= render 'static_pages/home/experts' %>
   <%= render 'static_pages/home/clients' %>
   <%= render 'static_pages/home/campus' %>
 </div>
+
+<script>
+  var slider = tns({
+    container: '.slider',
+    items: 1,
+    slideBy: 'page',
+    autoplay: true
+  });
+</script>
