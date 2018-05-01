@@ -5,6 +5,7 @@ Rails.application.routes.draw do
 
   get '/solucoes' => 'static_pages#solutions'
   get '/servicos' => 'static_pages#services'
+  get '/conteudos' => 'static_pages#content'
 
   namespace :admin do
     resources :pages

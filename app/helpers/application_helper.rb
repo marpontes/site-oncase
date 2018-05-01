@@ -6,4 +6,8 @@ module ApplicationHelper
   def services_page?
     action_name == 'services'
   end
+
+  def content_page?
+    action_name == 'content'
+  end
 end
