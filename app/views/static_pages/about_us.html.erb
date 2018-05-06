@@ -1,0 +1,100 @@
+<div class="about-us">
+  <div class="content container">
+    <div class="title">
+      SOBRE NÓS
+    </div>
+
+    <div class="d-flex">
+      <div class="description">
+        A Oncase é uma empresa de tecnologia com mais de 10 anos de mercado, focada em empoderar pessoas e organizações na transformação digital com uma abordagem orientada a dados.
+        <br><br>
+        Ajudamos várias organizações ao redor do mundo a transformar seus negócios através do melhor uso de big data, analytics e data science. Implementando as melhores práticas analíticas, identificando oportunidades de inovação, passando pelo desenvolvimento de times e fornecedores, e o suporte completo ao processo relacionado à dados.
+        <br><br>
+        Acreditamos na implementação de melhorias graduais e contínuas em forma de processos, sempre se adaptando aos novos desafios para gerar impacto real no negócio através da cultura analítica
+      </div>
+
+      <%= image_tag "time.png", class: "team" %>
+    </div>
+
+    <div class="social">
+      <div class="medias">
+        <a href="#" class="link">
+          <%= fa_icon 'facebook' %>
+        </a>
+
+        <a href="#" class="link">
+          <%= fa_icon 'twitter' %>
+        </a>
+
+        <a href="#" class="link">
+          <%= fa_icon 'linkedin' %>
+        </a>
+
+        <a href="#" class="link">
+          <%= fa_icon 'medium' %>
+        </a>
+
+        <a href="#" class="link">
+          <%= fa_icon 'github' %>
+        </a>
+      </div>
+    </div>
+
+    <div class="ninjas">
+      <div class="text-center">
+        <div class="title">
+          TIME DE NINJAS
+        </div>
+
+        <div class="sub-title">
+          THE NINJAS
+        </div>
+      </div>
+
+      <div class="row members">
+        <% 12.times do |i| %>
+          <div class="col-md-3 member text-center <%= 'shifted' if i.odd? %>">
+            <%= image_tag "member@2x.png", class: "photo" %>
+            <div class="name">Lucas França</div>
+            <div class="function">Head de marketing</div>
+          </div>
+        <% end %>
+      </div>
+
+      <div class="text-center">
+        <a href="#" class="btn btn-orange">
+          Entre para o nosso time de ninjas
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  <%= image_tag 'bg-tech@2x.png', width: '100%' %>
+
+  <div class="agile">
+    <div class="content container">
+      <div class="title">CULTURA AGILE NA ONCASE</div>
+
+      <div class="d-flex pt-4">
+        <div class="description">
+          A Oncase Soluções em TI está no mercado há mais de 8 anos, posicionando-se como uma consultoria especializada em inteligência de negócios (Business Intelligence) e gestão empresarial através do uso de ferramentas líderes de mercado.
+          <br><br>
+          Contamos com uma estrutura de fábrica de software própria utilizando métodos ágeis da engenharia de software para apoiar nossas soluções e aprimorar nosso desenvolvimento de sistemas customizados.
+          <br><br>
+          Conquistamos avanços importantes em quase uma década de existência, tais como:
+          <br>
+          - Em 2012 conquistamos o certificado de qualidade MPS.Br e em 2014 conquistamos o CMMI, uma certificação internacional, importante para fornecedores de software e serviços.
+          <br>
+          - Crescimento acelerado no número de colaboradores certificados na plataforma Pentaho,
+          <br>
+          - Recebemos em 2013 e 2014 o prêmio de melhor parceiro Pentaho da América Latina.  
+          <br>
+          - Temos clientes de diversos portes, segmentos e em diferentes localidades.
+        </div>
+
+        <%= image_tag "agile@2x.png", class: "image" %>
+      </div>
+    </div>
+  </div>
+</div>

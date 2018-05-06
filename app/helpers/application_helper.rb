@@ -10,4 +10,8 @@ module ApplicationHelper
   def content_page?
     action_name == 'content'
   end
+
+  def about_us_page?
+    action_name == 'about_us'
+  end
 end

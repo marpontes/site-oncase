@@ -10,4 +10,7 @@ class StaticPagesController < ApplicationController
 
   def content
   end
+
+  def about_us
+  end
 end

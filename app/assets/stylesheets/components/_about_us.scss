@@ -1,0 +1,116 @@
+.about-us {
+  padding-top: 3em;
+
+  > .content {
+    > .title {
+      font-family: 'Raleway', sans-serif;
+      font-size: 50px;
+      font-weight: 700;
+      line-height: 60px;
+    }
+
+    .description {
+      max-width: 650px;
+      padding-top: 1em;
+  
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 1.618;
+    }
+
+    .team {
+      width: auto;
+      height: 480px;
+      margin-left: 4em;
+    }
+
+    .social {
+      .medias {
+        i {
+          padding-right: 1em;
+          font-size: 25px;
+          color: $color-medium-blue;
+        }
+      }
+    }
+
+    .ninjas {
+      padding-top: 7em;
+
+      .title, .sub-title {
+        font-family: 'Raleway', sans-serif;
+        font-size: 50px;
+        font-weight: 800;
+        line-height: 60px;
+        letter-spacing: 2px;
+        color: $color-medium-blue;
+      }
+
+      .sub-title {
+        opacity: 0.1;
+        padding-left: 3.5em;
+      }
+
+      .members {
+        padding: 5em 2em 0;
+
+        .member {
+          .photo {
+            width: auto;
+            height: 225px;
+          }
+
+          .name {
+            padding-top: .5em;
+            font-size: 25px;
+            font-weight: bold;
+          }
+          
+          .function {
+            font-size: 20px;
+            font-weight: 300;
+          }
+  
+          &.shifted {
+            padding-top: 8em;
+          }
+        }
+      }
+
+      .btn {
+        margin-top: 5em;
+        font-size: 20px;
+        font-weight: 300;
+      }
+    }
+  }
+
+  .agile {
+    padding: 3em 0 0;
+    margin-top: -1px;
+    background-color: $color-light-grey;
+
+    .content {
+      > .title {
+        font-family: 'Raleway', sans-serif;
+        font-size: 50px;
+        font-weight: 700;
+      }
+  
+      .description {
+        max-width: 650px;
+        padding-top: .5em;
+  
+        font-size: 20px;
+        font-weight: 300;
+      }
+
+      .image {
+        width: auto;
+        height: 550px;
+        margin-left: 4em;
+        margin-top: 2em;
+      }
+    }
+  }
+}
