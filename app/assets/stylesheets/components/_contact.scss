@@ -1,0 +1,103 @@
+.contact {
+  padding-top: 3em;
+
+  > .content {
+    > .title {
+      font-family: 'Raleway', sans-serif;
+      font-size: 50px;
+      font-weight: 700;
+      line-height: 60px;
+    }
+
+    > .description {
+      max-width: 750px;
+      padding-top: 1em;
+  
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 1.618;
+    }
+
+    .talk {
+      padding-top: 4em;
+      font-weight: 300;
+
+      > .title {
+        font-size: 50px;
+      }
+
+      .description {
+        font-size: 25px;
+      }
+
+      form {
+        padding-top: 3em;
+
+        label {
+          font-size: 20px;
+        }
+
+        input, textarea {
+          border-radius: 20px;
+        }
+        
+        button {
+          font-size: 20px;
+        }
+      }
+
+      .social {
+        padding-top: 3em;
+
+        .medias {
+          padding-top: .75em;
+
+          i {
+            padding-right: 1em;
+            font-size: 20px;
+            color: $color-medium-blue;
+          }
+        }
+      }
+
+      .place {
+        padding-top: 2em;
+        font-size: 25px;
+      }
+    }
+  }
+
+  > .jobs {
+    padding: 3em 0 3em;
+    margin-top: -1px;
+    background-color: $color-light-grey;
+
+    .content {
+      > .title {
+        font-size: 50px;
+      }
+  
+      > .description {
+        padding-top: .5em;
+  
+        font-size: 25px;
+        font-weight: 300;
+      }
+
+      .job {
+        font-size: 20px;
+        padding-right: 2em;
+
+        .description {
+          font-weight: 300;
+        }
+
+        .btn {
+          &:hover {
+            color: $color-white;
+          }
+        }
+      }
+    }
+  }
+}

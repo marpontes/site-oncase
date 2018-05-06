@@ -1,0 +1,131 @@
+<div class="contact">
+  <div class="content container">
+    <div class="title">
+      CONTATO
+    </div>
+
+    <div class="description">
+      Somos especialistas em Data analytics e somos especialistas em ajudar empresas a tomarem as melhores decisões atráves dos seus dados. Abaixo tem só um pouco do que mandamos muito bem!
+    </div>
+
+    <div class="talk">
+      <div class="title">Fale Conosco</div>
+
+      <div class="description">
+        Entre em contato com o nosso time, iremos te responder rapidamente.
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <form action="/">
+            <div class="form-group">
+              <label for="nome">Como podemos chamar você?</label>
+              <input type="text" name="nome" class="form-control" placeholder="Pode ser o seu primeiro nome...">
+            </div>
+
+            <div class="form-group">
+              <label for="email">Seu email:</label>
+              <input type="email" name="email" class="form-control" placeholder="seu@email.com">
+            </div>
+
+            <div class="form-group">
+              <label for="mensagem">Escreva uma mensagem para a gente:</label>
+              <textarea name="mensagem" class="form-control" placeholder="seu@email.com" rows="5"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-light-blue">Enviar <strong>Mensagem</strong></button>
+          </form>
+        </div>
+
+        <div class="col-md-2"></div>
+
+        <div class="col-md-4">
+          <div class="social">
+            <div class="medias">
+              <a href="#" class="link">
+                <%= fa_icon 'facebook' %>
+              </a>
+
+              <a href="#" class="link">
+                <%= fa_icon 'twitter' %>
+              </a>
+
+              <a href="#" class="link">
+                <%= fa_icon 'linkedin' %>
+              </a>
+
+              <a href="#" class="link">
+                <%= fa_icon 'medium' %>
+              </a>
+
+              <a href="#" class="link">
+                <%= fa_icon 'github' %>
+              </a>
+            </div>
+          </div>
+
+          <div class="place">
+            <div class="title">
+              <strong>Recife</strong>
+            </div>
+
+            <div class="d-flex address align-items-start pt-3">
+              <%= image_tag "icone-mapa@2x.png" %>
+              <div class="pl-3">
+                Rua do Bom Jesus, 163 - 2 andar
+                <br>
+                Recife-PE CEP 50.030-170 
+              </div>
+            </div>
+
+            <div class="d-flex phone align-items-start pt-2">
+              <%= image_tag "icone-mapa@2x.png" %>
+              <div class="pl-3">
+                Fone: +55-81-3077-8558
+              </div>
+            </div>
+          </div>
+
+          <div class="place">
+            <div class="title">
+              <strong>São Paulo</strong>
+            </div>
+
+            <div class="d-flex phone align-items-start pt-3">
+              <%= image_tag "icone-mapa@2x.png" %>
+              <div class="pl-3">
+                Fone: +55-81-3077-8558
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <%= image_tag 'bg-tech@2x.png', width: '100%' %>
+
+  <div class="jobs">
+    <div class="content container">
+      <div class="title">Entre para o nosso time de ninjas</div>
+
+      <div class="description">
+        Estamos contratando, veja as vagas logo abaixo:
+      </div>
+
+      <div class="row">
+        <% 9.times do %>
+          <div class="col-md-4 job pt-5 pb-4">
+            <div class="title"><strong>Estagiario de vaga teste</strong></div>
+
+            <div class="description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam commodi fugiat facere sit laudantium obcaecati, quisquam impedit vero quae error similique totam libero et explicabo est enim veritatis officia dolorem.
+            </div>
+
+            <a href="#" class="btn btn-outline-light-blue mt-4">Se candidate a esta vaga</a>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
