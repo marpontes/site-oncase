@@ -22,6 +22,18 @@
     padding: 0 5em;
   }
 
+  .cassius {
+    img {
+      height: 125px;
+    }
+  }
+
+  .scora {
+    img {
+      height: 200px;
+    }
+  }
+
   .solution {
     > .title {
       padding-bottom: 1em;
@@ -105,6 +117,96 @@
           text-decoration: underline;
           font-size: 15px;
           font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  .solutions {
+    padding-top: 0;
+
+    .container {
+      padding: 0;
+    }
+
+    .content {
+      > .title {
+        font-size: 30px;
+      }
+
+      .description {
+        font-size: 17px;
+      }
+    }
+
+    .solutions-wrapper {
+      padding: 0;
+      padding-bottom: 2em;
+
+      .solution {
+        > .title {
+          font-size: 25px;
+        }
+
+        > .short-description {
+          padding-bottom: 1em;
+          font-size: 20px;
+        }
+
+        .points {
+          padding-top: 0;
+
+          .point {
+            padding: .5em 0;
+            width: initial;
+          }
+        }
+
+        .actions {
+          padding-top: 1em;
+
+          .btn {
+            font-size: 16px;
+          }
+        }
+      }
+
+      .cassius {
+        img {
+          height: 70px;
+        }
+      }
+
+      .scora {
+        img {
+          height: 125px;
+        }
+      }
+    }
+
+    .tech-products {
+      padding-top: 2em;
+
+      .content {
+        > .title {
+          font-size: 25px;
+        }
+
+        > .description {
+          font-size: 17px;
+        }
+
+        .products {
+          .product {
+            padding: 2em;
+
+            > .description {
+              font-size: 17px;
+            }
+          }
         }
       }
     }
