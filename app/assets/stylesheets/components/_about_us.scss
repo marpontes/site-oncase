@@ -114,3 +114,97 @@
     }
   }
 }
+
+@media screen and (max-width: 767px) {
+  .about-us {
+    padding-top: 0;
+
+    .container {
+      padding: 0;
+    }
+
+    .content {
+      > .title {
+        font-size: 30px;
+      }
+
+      .description {
+        font-size: 17px;
+      }
+
+      .team {
+        width: auto;
+        height: 275px;
+        margin: 0 auto;
+        margin-top: 2em;
+      }
+
+      .social {
+        .medias {
+          text-align: center;
+
+          .link {
+            i {
+              padding: .5em;
+            }
+          }
+        }
+      }
+
+      .ninjas {
+        padding-top: 3em;
+
+        .title, .sub-title {
+          font-size: 30px;
+          line-height: 35px;
+        }
+
+        .sub-title {
+          padding-left: 0;
+          text-align: right;
+        }
+
+        .members {
+          padding-top: 1em;
+
+          .member {
+            padding: 2em 0;
+
+            &.shifted {
+              padding: 0;
+            }
+          }
+        }
+
+        .btn {
+          margin: 2em 0 3em;
+          font-size: 16px;
+        }
+      }
+    }
+
+    .agile {
+      padding: 2em 0;
+
+      .content {
+        > .title {
+          // text-align: center;
+          font-size: 35px;
+          line-height: 40px;
+        }
+
+        .description {
+          padding-top: 0;
+          font-size: 17px;
+        }
+
+        .image {
+          margin: 0 auto;
+          margin-top: 2em;
+          height: 300px;
+          width: auto;
+        }
+      }
+    }
+  }
+}

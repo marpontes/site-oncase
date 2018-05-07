@@ -51,3 +51,29 @@
     }
   }
 }
+
+@media screen and (max-width: 767px) {
+  .navbar {
+    padding-top: .5em;
+
+    .navbar-brand {
+      margin-top: 0;
+    }
+
+    .navbar-nav {
+      padding-left: 0;
+
+      .nav-item {
+        padding: .5em 0;
+
+        .nav-link {
+          display: inline;
+        }
+
+        .btn {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}

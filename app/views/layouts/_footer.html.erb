@@ -1,3 +1,18 @@
+<!--<div class="feed text-center <%= 'bg-grey' if action_name == 'solutions' or action_name == 'services' or action_name == 'about_us' or action_name == 'contact' %> ">
+  <strong>Receba conteúdo em primeira mão ;)</strong>
+
+  <form action="">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="form-group">
+          <input type="email" name="email" placeholder="Digite aqui o seu email" class="form-control">
+
+        </div>
+      </div>
+    </div>
+  </form>
+</div> -->
+
 <% if action_name == 'solutions' or action_name == 'services' or action_name == 'about_us' or action_name == 'contact' %>
   <%= image_tag "bg-footer-alt@2x.png", width: "101%", style: "margin-left: -2px" %>  
 <% else %>
