@@ -44,3 +44,55 @@
     }
   }
 }
+
+@media screen and (max-width: 767px) {
+  .content-page {
+    padding-top: 1em;
+    padding-bottom: 0;
+
+    .container {
+      padding: 0;
+    }
+
+    .content {
+      > .title {
+        font-size: 35px;
+        line-height: 40px;
+      }
+
+      > .description {
+        font-size: 17px;
+      }
+
+      > .content-box {
+        padding: 2em 0;
+
+        .text {
+          padding-right: 0 !important;
+          padding-left: 0 !important;
+          
+          > .title {
+            font-size: 35px;
+          }
+
+          > .description {
+            font-size: 17px;
+          }
+
+          iframe {
+            width: 280px !important;
+            height: 200px !important;
+          }
+        }
+
+        .btn {
+          font-size: 17px;
+        }
+
+        img {
+          display: none;
+        }
+      }
+    }
+  }
+}

@@ -110,3 +110,97 @@
     }
   }
 }
+
+@media screen and (max-width: 767px) {
+  .services-page {
+    padding-top: 1em;
+
+    .container {
+      padding: 0;
+      padding-bottom: 3em;
+    }
+
+    .content {
+      > .title {
+        font-size: 29px;
+        line-height: 35px;
+      }
+
+      > .description {
+        font-size: 17px;
+      }
+
+      > .services {
+        padding: 3em 0 0;
+
+        .service {
+          text-align: center;
+          
+          .title {
+            font-size: 25px;
+            font-weight: bold;
+          }
+          .description {
+            font-size: 17px;
+          }
+
+          img {
+            margin: 0 auto;
+          }
+
+          .description-wrapper {
+            padding-left: 0;
+            padding-top: 1.5em;
+          }
+        }
+      }
+
+      .solutions-wrapper {
+        padding: 0;
+
+        .solution {
+          > .title {
+            font-size: 25px;
+          }
+
+          .short-description {
+            padding: 1.5em 0 0 0;
+            font-size: 20px;
+          }
+
+          .points {
+            padding-top: 0;
+            font-size: 17px;
+
+            .point {
+              width: initial;
+            }
+
+            .col-md-6, .col-md-8 {
+              padding-top: 1em;
+            }
+          }
+
+          .actions {
+            padding-top: 2em;
+            font-size: 17px;
+
+            .btn {
+              font-size: 17px;
+            }
+          }
+        }
+      }
+    }
+
+    .technologies {
+      padding-top: 2em;
+
+      .content {
+        > .description {
+          padding-top: 1em;
+        }
+      }
+    }
+  }
+}
