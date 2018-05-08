@@ -101,3 +101,75 @@
     }
   }
 }
+
+@media screen and (max-width: 767px) {
+  .contact {
+    padding-top: 1em;
+
+    .container {
+      padding: 0;
+    }
+
+    > .content {
+      > .title {
+        font-size: 35px;
+        line-height: 40px;
+      }
+
+      > .description {
+        font-size: 17px;
+      }
+
+      .talk {
+        padding-top: 2em;
+
+        > .title {
+          font-size: 35px;
+        }
+
+        .description {
+          font-size: 20px;
+        }
+
+        form {
+          padding-top: 1.5em;
+
+          label, button {
+            font-size: 17px;
+          }
+        }
+
+        .social {
+          padding-top: 2em;
+        }
+
+        .place {
+          font-size: 17px;
+        }
+      }
+    }
+
+    > .jobs {
+      padding-top: 2em;
+      
+      .content {
+        > .title {
+          font-size: 35px;
+          line-height: 40px;
+        }
+
+        .description {
+          font-size: 20px;
+        }
+
+        .job {
+          padding: 1em !important;
+          
+          .title, .description {
+            font-size: 17px;
+          }
+        }
+      }
+    }
+  }
+}
