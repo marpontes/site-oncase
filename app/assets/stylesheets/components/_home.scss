@@ -200,3 +200,149 @@
     }
   }
 }
+
+@media screen and (max-width: 767px) {
+  .home {
+    .slider {
+      img {
+        width: 100%;
+      }
+    }
+
+    .tns-outer {
+      padding: 0 1em !important;
+    }
+
+    .about-us {
+      .bg-bottom {
+        margin-top: -20px;
+      }
+
+      .content {
+        padding: 1em 0 0 0;
+
+        .container {
+          flex-wrap: wrap;
+        }
+
+        .description-wrapper {
+          padding: 2em 1em;
+
+          > .title {
+            font-size: 40px;
+          }
+
+          > .description {
+            font-size: 17px;
+            font-weight: 200;
+          }
+
+          > .actions {
+            padding-top: 1.5em;
+
+            .social {
+              padding-top: 1.5em;
+              
+              .medias {
+                padding-top: 0;
+              }
+            }
+
+            .btn {
+              font-size: 20px;
+            }
+          }
+        }
+
+        .team {
+          width: 90%;
+          height: auto;
+        }
+      }
+    }
+
+    .experts {
+      padding-top: 2em;
+
+      .circle-1 {
+        width: 320px;
+      }
+
+      .content {
+        > .title {
+          font-size: 30px;
+        }
+
+        > .description {
+          width: initial;
+          font-size: 17px;
+        }
+
+        > .services {
+          padding: 3em 0 0;
+
+          .service {
+            text-align: center;
+            
+            .title {
+              font-size: 25px;
+              font-weight: bold;
+            }
+            .description {
+              font-size: 17px;
+            }
+
+            img {
+              margin: 0 auto;
+            }
+
+            .description-wrapper {
+              padding-left: 0;
+              padding-top: 1.5em;
+            }
+          }
+        }
+      }
+    }
+
+    .clients {
+      padding: 2em;
+
+      .logos {
+        padding-top: 1em;
+      }
+
+      img {
+        padding-right: 0 !important;
+        margin: .75em auto;
+      }
+    }
+
+    .campus {
+      padding-top: 2em;
+
+      .content {
+        > .title {
+          font-size: 40px;
+        }
+
+        > .video {
+          padding: 2em 1em;
+
+          iframe {
+            width: 100%;
+          }
+        }
+
+        .description {
+          padding: 0 1em;
+          font-size: 17px;
+        }
+
+        .actions {
+          padding-top: 1.5em;
+        }
+      }
+    }
+  }
+}
