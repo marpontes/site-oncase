@@ -1,4 +1,4 @@
-.about-us {
+div.about-us {
   padding-top: 3em;
 
   > .content {
@@ -116,7 +116,7 @@
 }
 
 @media screen and (max-width: 767px) {
-  .about-us {
+  div.about-us {
     padding-top: 0;
 
     .container {
@@ -124,6 +124,8 @@
     }
 
     .content {
+      padding: 0 1em;
+      
       > .title {
         font-size: 35px;
       }
