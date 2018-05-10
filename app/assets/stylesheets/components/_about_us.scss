@@ -25,6 +25,8 @@ div.about-us {
     }
 
     .social {
+      padding-top: 1em;
+      
       .medias {
         i {
           padding-right: 1em;
@@ -125,6 +127,10 @@ div.about-us {
 
     .content {
       padding: 0 1em;
+
+      .d-flex {
+        flex-wrap: wrap;
+      }
       
       > .title {
         font-size: 35px;
