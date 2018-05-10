@@ -67,7 +67,7 @@
           }
           
           .point {
-            width: 500px;
+            max-width: 425px;
           }
         }
 
@@ -161,6 +161,10 @@
         padding: 0;
 
         .solution {
+          .d-flex {
+            flex-wrap: wrap;
+          }
+
           > .title {
             font-size: 25px;
           }

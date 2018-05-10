@@ -149,6 +149,10 @@
       padding-bottom: 2em;
 
       .solution {
+        .d-flex {
+          flex-wrap: wrap;
+        }
+
         > .title {
           font-size: 25px;
         }
