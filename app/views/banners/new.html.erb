@@ -1,0 +1,10 @@
+<%= render 'layouts/admin_navbar' %>
+
+<div class="container">
+  <h1>Novo Banner</h1>
+
+  <%= render 'form', banner: @banner %>
+
+  <%= link_to 'Voltar', banners_path, class: 'btn btn-secondary' %>
+</div>
+

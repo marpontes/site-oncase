@@ -1,0 +1,19 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container p-0">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav" style="padding-left: 0">
+        <li class="nav-item <%= 'active' if banners_page? %>">
+          <a class="nav-link" href="/banners">BANNERS <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item <%= 'active' if jobs_page? %>">
+          <a class="nav-link" href="/jobs">VAGAS</a>
+        </li>
+        <li class="nav-item <%= 'active' if members_page? %>">
+          <a class="nav-link" href="/members">MEMBROS</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<hr class="divider">

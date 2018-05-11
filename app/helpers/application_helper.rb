@@ -15,6 +15,18 @@ module ApplicationHelper
     action_name == 'about_us'
   end
 
+  def jobs_page?
+    controller_name == 'jobs'
+  end
+
+  def banners_page?
+    controller_name == 'banners'
+  end
+
+  def members_page?
+    controller_name == 'members'
+  end
+
   def markdown(text)
     options = {
       filter_html:     true,
