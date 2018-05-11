@@ -24,6 +24,13 @@ gem 'bootstrap', '~> 4.1.0'
 
 gem 'font-awesome-rails'
 
+gem 'devise'
+
+# Cloudinary GEM for Ruby on Rails integration
+gem 'cloudinary'
+# Attachments handler for Rails that uses Cloudinary for storage
+gem 'attachinary', git: 'https://github.com/ThomasConnolly/attachinary'
+
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks

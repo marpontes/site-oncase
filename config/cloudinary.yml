@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: wecare-platform
+  api_key: '997629371725544'
+  api_secret: dYsitTJ8OKN3O520M3u7CN3Sfys
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: wecare-platform
+  api_key: '997629371725544'
+  api_secret: dYsitTJ8OKN3O520M3u7CN3Sfys
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: wecare-platform
+  api_key: '997629371725544'
+  api_secret: dYsitTJ8OKN3O520M3u7CN3Sfys
+  enhance_image_tag: true
+  static_image_support: false

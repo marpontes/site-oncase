@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  mount Attachinary::Engine => "/attachinary"
+
+  devise_for :users
 
   root to: 'static_pages#home'
 
@@ -9,7 +11,5 @@ Rails.application.routes.draw do
   get '/sobre-nos' => 'static_pages#about_us'
   get '/contato' => 'static_pages#contact'
 
-  namespace :admin do
-    resources :pages
-  end
+  resources :members
 end
