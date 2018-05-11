@@ -52,11 +52,11 @@
       </div>
 
       <div class="row members">
-        <% 12.times do |i| %>
+        <% @members.each_with_index do |member, i| %>
           <div class="col-md-3 member text-center <%= 'shifted' if i.odd? %>">
-            <%= image_tag "member@2x.png", class: "photo" %>
-            <div class="name">Lucas França</div>
-            <div class="function">Head de marketing</div>
+            <%= cl_image_tag member.avatar.path, class: "photo" %>
+            <div class="name"><%= member.name %></div>
+            <div class="function"><%= member.function %></div>
           </div>
         <% end %>
       </div>

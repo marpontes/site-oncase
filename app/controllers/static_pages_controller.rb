@@ -12,6 +12,7 @@ class StaticPagesController < ApplicationController
   end
 
   def about_us
+    @members = Member.all
   end
 
   def contact
