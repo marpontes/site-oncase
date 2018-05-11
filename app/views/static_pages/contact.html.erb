@@ -5,15 +5,11 @@
     </div>
 
     <div class="description">
-      Somos especialistas em Data analytics e somos especialistas em ajudar empresas a tomarem as melhores decisões atráves dos seus dados. Abaixo tem só um pouco do que mandamos muito bem!
+      Mande a sua mensagem para a Oncase, o nosso time responderá o mais rápido possível.
     </div>
 
     <div class="talk">
       <div class="title">Fale Conosco</div>
-
-      <div class="description">
-        Entre em contato com o nosso time, iremos te responder rapidamente.
-      </div>
 
       <div class="row">
         <div class="col-md-4">
@@ -110,22 +106,28 @@
       <div class="title">Entre para o nosso time de ninjas</div>
 
       <div class="description">
-        Estamos contratando, veja as vagas logo abaixo:
-      </div>
-
-      <div class="row">
-        <% 9.times do %>
-          <div class="col-md-4 job pt-5 pb-4">
-            <div class="title"><strong>Estagiario de vaga teste</strong></div>
-
-            <div class="description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam commodi fugiat facere sit laudantium obcaecati, quisquam impedit vero quae error similique totam libero et explicabo est enim veritatis officia dolorem.
-            </div>
-
-            <a href="#" class="btn btn-outline-light-blue mt-4">Se candidate a esta vaga</a>
-          </div>
+        <% if @jobs.empty? %>
+          No momento não possuímos vagas abertas.
+        <% else %>
+          Estamos contratando, veja as vagas logo abaixo:
         <% end %>
       </div>
+      
+      <% unless @jobs.empty? %>
+        <div class="row">
+          <% @jobs.each do |job| %>
+            <div class="col-md-4 job pt-5 pb-4">
+              <div class="title"><strong><%= job.name %></strong></div>
+
+              <div class="description">
+                <%= markdown(job.description) %>
+              </div>
+
+              <a href="#" class="btn btn-outline-light-blue mt-4">Se candidate a esta vaga</a>
+            </div>
+          <% end %>
+        </div>
+      <% end %>
     </div>
   </div>
 </div>

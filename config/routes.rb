@@ -12,4 +12,5 @@ Rails.application.routes.draw do
   get '/contato' => 'static_pages#contact'
 
   resources :members
+  resources :jobs
 end

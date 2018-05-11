@@ -1,0 +1,37 @@
+<div class="container">
+  <% if notice %>
+    <div class="alert alert-success">
+      <%= notice %>
+    </div>
+  <% end %>
+
+  <h1><%= @job.name %></h1>
+
+  <% if @job.available %>
+    <span class="badge badge-success">
+      Vaga publicada
+    </span>
+  <% else %>
+    <span class="badge badge-danger">
+      Vaga não publicada
+    </span>
+  <% end %>
+
+  <br>
+  <br>
+
+  <p>
+    <strong>Descrição:</strong>
+  </p>
+
+  <div>
+    <%= markdown(@job.description) %>
+  </div>
+
+  <div class="actions">
+    <%= link_to 'Editar', edit_job_path(@job), class: 'btn btn-success' %>
+    <span>&nbsp;</span>
+    <%= link_to 'Voltar', jobs_path, class: 'btn btn-secondary' %>
+  </div>
+</div>
+

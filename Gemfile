@@ -26,6 +26,8 @@ gem 'font-awesome-rails'
 
 gem 'devise'
 
+gem 'redcarpet'
+
 # Cloudinary GEM for Ruby on Rails integration
 gem 'cloudinary'
 # Attachments handler for Rails that uses Cloudinary for storage

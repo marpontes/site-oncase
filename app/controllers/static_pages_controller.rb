@@ -16,5 +16,6 @@ class StaticPagesController < ApplicationController
   end
 
   def contact
+    @jobs = Job.all
   end
 end
