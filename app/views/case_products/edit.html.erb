@@ -1,0 +1,10 @@
+<%= render 'layouts/admin_navbar' %>
+
+<div class="container">
+  <h1>Editar Case/Aplicação</h1>
+
+  <%= render 'form', case_product: @case_product %>
+
+  <%= link_to 'Voltar', case_products_path, class: 'btn btn-secondary' %>
+</div>
+

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180511141449) do
+ActiveRecord::Schema.define(version: 20180516193423) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -31,6 +31,37 @@ ActiveRecord::Schema.define(version: 20180511141449) do
   end
 
   create_table "banners", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "case_product_descriptions", force: :cascade do |t|
+    t.bigint "case_product_id"
+    t.integer "position"
+    t.string "name"
+    t.text "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["case_product_id"], name: "index_case_product_descriptions_on_case_product_id"
+  end
+
+  create_table "case_products", force: :cascade do |t|
+    t.string "category"
+    t.string "name"
+    t.text "description"
+    t.integer "color"
+    t.string "link"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "image_height"
+  end
+
+  create_table "cases", force: :cascade do |t|
+    t.string "category"
+    t.string "name"
+    t.text "description"
+    t.integer "color"
+    t.string "link"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -57,6 +88,34 @@ ActiveRecord::Schema.define(version: 20180511141449) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "product_points", force: :cascade do |t|
+    t.bigint "product_id"
+    t.string "name"
+    t.text "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["product_id"], name: "index_product_points_on_product_id"
+  end
+
+  create_table "products", force: :cascade do |t|
+    t.string "name"
+    t.text "description"
+    t.string "link"
+    t.integer "color"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "category"
+  end
+
+  create_table "tech_products", force: :cascade do |t|
+    t.string "name"
+    t.text "description"
+    t.boolean "code_available"
+    t.string "link"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
@@ -74,4 +133,6 @@ ActiveRecord::Schema.define(version: 20180511141449) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "case_product_descriptions", "case_products"
+  add_foreign_key "product_points", "products"
 end

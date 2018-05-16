@@ -1,0 +1,2 @@
+module CaseProductsHelper
+end

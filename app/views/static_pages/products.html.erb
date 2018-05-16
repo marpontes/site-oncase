@@ -1,0 +1,113 @@
+<div class="solutions">
+  <div class="content container">
+    <div class="title">
+      NOSSOS PRODUTOS
+    </div>
+
+    <div class="description">
+      Solução de produtividade comercial, efetividade de rota e controle de estoque trazendo inteligência para sua força de vendas.
+    </div>
+
+    <div class="tech-products">
+      <div class="content">
+        <div class="row products">
+          <div class="col-md-4 product text-center">
+            <%= image_tag 'oktopus@2x.png', height: '100px' %>
+
+            <div class="title">
+              Oktopus
+            </div>
+
+            <div class="description">
+              Governança par amúltiplos dasboards e fontes de dados analíticas com segurança dinâmica de cubos OLAP.
+            </div>
+          </div>
+          
+          <div class="col-md-4 product text-center">
+            <%= image_tag 'tarantula@2x.png', height: '100px' %>
+
+            <div class="title">
+              Tarantulla
+            </div>
+
+            <div class="description mb-3">
+              Agregar dados de diversas fontes web (crawler), de redes sociais de modo organizado e categorizado por contexto.
+            </div>
+
+            <a href="#" class="link">
+              CÓDIGO DISPONÍVEL
+              <span>&nbsp;</span>
+              <%= fa_icon "github" %>
+            </a>
+          </div>
+
+          <div class="col-md-4 product text-center">
+            <%= image_tag 'krab@2x.png', height: '100px' %>
+
+            <div class="title">
+              Krab
+            </div>
+
+            <div class="description">
+              Dados e análise de dados georreferenciados com possibilidade de implementação on premises.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="title pt-5 mt-5">
+      CASES E APLICAÇÕES
+    </div>
+
+    <div class="description">
+      A Oncase é uma empresa de tecnologia com mais de 10 anos de mercado, focada em empoderar pessoas e organizações na transformação digital com uma abordagem orientada a dados.
+    </div>
+
+    <div class="solutions-wrapper">
+      <% @case_products.each do |case_product| %>
+        <div class="solution pt-5">
+          <div class="title">
+            <%= case_product.category %>
+          </div>
+
+          <div class="d-none d-lg-block">
+            <%= cl_image_tag case_product.image.path, height: "#{case_product.image_height}px" %>
+          </div>
+
+          <div class="d-block d-lg-none">
+            <%= cl_image_tag case_product.image.path, width: '100%', height: 'auto' %>
+          </div>
+
+          <div class="short-description">
+            <%= markdown(case_product.description) %>
+          </div>
+
+          <div class="row points">
+            <% case_product.case_product_descriptions.each do |point| %>
+              <div class="col-md-6">
+                <div class="point">
+                  <div class="title">
+                    <strong><%= point.name %></strong>
+                  </div>
+                  
+                  <div class="description">
+                    <%= markdown(point.description) %>
+                  </div>
+                </div>
+              </div>
+            <% end %>
+          </div>
+
+          <div class="actions text-center">
+            <a href="<%= case_product.link %>" class="btn btn-outline-<%= case_product.color.gsub("_", "-") %>">
+              Veja mais sobre o <strong><%= case_product.name %></strong>
+              <span>&nbsp;</span>
+              <%= fa_icon "chevron-right" %>
+            </a>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

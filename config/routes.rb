@@ -5,7 +5,7 @@ Rails.application.routes.draw do
 
   root to: 'static_pages#home'
 
-  get '/solucoes' => 'static_pages#solutions'
+  get '/produtos' => 'static_pages#products'
   get '/servicos' => 'static_pages#services'
   get '/conteudos' => 'static_pages#content'
   get '/sobre-nos' => 'static_pages#about_us'
@@ -14,4 +14,6 @@ Rails.application.routes.draw do
   resources :members
   resources :jobs
   resources :banners
+  resources :tech_products
+  resources :case_products
 end

@@ -11,6 +11,12 @@
         <li class="nav-item <%= 'active' if members_page? %>">
           <a class="nav-link" href="/members">MEMBROS</a>
         </li>
+        <li class="nav-item <%= 'active' if admin_tech_products_page? %>">
+          <a class="nav-link" href="/tech_products">PRODUTOS</a>
+        </li>
+        <li class="nav-item <%= 'active' if admin_case_products_page? %>">
+          <a class="nav-link" href="/case_products">CASES E APLICAÇÕES</a>
+        </li>
         <li class="nav-item">
           <%= link_to "SAIR", destroy_user_session_path, method: :delete, class: 'nav-link' %>
         </li>

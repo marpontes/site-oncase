@@ -28,6 +28,8 @@ gem 'devise'
 
 gem 'redcarpet'
 
+gem 'cocoon'
+
 # Cloudinary GEM for Ruby on Rails integration
 gem 'cloudinary'
 # Attachments handler for Rails that uses Cloudinary for storage

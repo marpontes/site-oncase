@@ -3,7 +3,9 @@ class StaticPagesController < ApplicationController
     @banners = Banner.all
   end
 
-  def solutions
+  def products
+    @products = TechProduct.all
+    @case_products = CaseProduct.all
   end
 
   def services

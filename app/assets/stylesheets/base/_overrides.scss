@@ -32,3 +32,7 @@
     max-width: 1500px !important;
   }
 }
+
+.CodeMirror, .CodeMirror-scroll {
+	min-height: 100px;
+}

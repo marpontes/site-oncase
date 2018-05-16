@@ -1,0 +1,65 @@
+<%= render 'layouts/admin_navbar' %>
+
+<div class="container">
+  <% if notice %>
+    <div class="alert alert-success">
+      <%= notice %>
+    </div>
+  <% end %>
+</div>
+
+<div class="solutions pt-0">
+  <div class="content container">
+    <div class="solutions-wrapper">
+      <div class="solution pb-4">
+        <div class="title">
+          <%= @case_product.category %>
+        </div>
+
+        <div class="d-none d-lg-block">
+          <%= cl_image_tag @case_product.image.path, height: "#{@case_product.image_height}px" %>
+        </div>
+
+        <div class="d-block d-lg-none">
+          <%= cl_image_tag @case_product.image.path, width: '100%', height: 'auto' %>
+        </div>
+
+        <div class="short-description">
+          <%= markdown(@case_product.description) %>
+        </div>
+
+        <div class="row points">
+          <% @case_product.case_product_descriptions.each do |point| %>
+            <div class="col-md-6">
+              <div class="point">
+                <div class="title">
+                  <strong><%= point.name %></strong>
+                </div>
+                
+                <div class="description">
+                  <%= markdown(point.description) %>
+                </div>
+              </div>
+            </div>
+          <% end %>
+        </div>
+
+        <div class="actions text-center">
+          <a href="<%= @case_product.link %>" class="btn btn-outline-<%= @case_product.color.gsub("_", "-") %>">
+            Veja mais sobre o <strong><%= @case_product.name %></strong>
+            <span>&nbsp;</span>
+            <%= fa_icon "chevron-right" %>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<div class="container pt-2">
+  <%= link_to "Editar", edit_case_product_path, class: "btn btn-primary" %>
+  <span>&nbsp;</span>
+  <%= link_to "Voltar", case_products_path, class: "btn btn-secondary" %>
+</div>

@@ -19,9 +19,19 @@
 //= require jquery.fileupload
 //= require cloudinary
 //= require attachinary
+//= require cocoon
 //= require turbolinks
 //= require_tree .
 
 $(document).on('turbolinks:load', function() {
   $('.attachinary-input').attachinary();
+
+  $('#case_product_descriptions').on('cocoon:after-insert', function(e, insertedElement) {
+    var simplemde = new SimpleMDE({
+      element: $(insertedElement).find('textarea')[0],
+      spellChecker: false
+    });
+
+    simplemde.render();
+  });
 })

@@ -1,6 +1,6 @@
 module ApplicationHelper
-  def solutions_page?
-    action_name == 'solutions'
+  def products_page?
+    action_name == 'products'
   end
 
   def services_page?
@@ -25,6 +25,14 @@ module ApplicationHelper
 
   def members_page?
     controller_name == 'members'
+  end
+
+  def admin_tech_products_page?
+    controller_name == 'tech_products'
+  end
+
+  def admin_case_products_page?
+    controller_name == 'case_products'
   end
 
   def markdown(text)
