@@ -1,6 +1,10 @@
-<h1>Editing Tech Product</h1>
+<%= render 'layouts/admin_navbar' %>
 
-<%= render 'form', tech_product: @tech_product %>
+<div class="container">
+  <h1>Editar Produto</h1>
 
-<%= link_to 'Show', @tech_product %> |
-<%= link_to 'Back', tech_products_path %>
+  <%= render 'form', tech_product: @tech_product %>
+
+  <%= link_to 'Voltar', tech_products_path, class: 'btn btn-secondary' %>
+</div>
+

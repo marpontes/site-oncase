@@ -42,7 +42,7 @@ class TechProductsController < ApplicationController
   def update
     respond_to do |format|
       if @tech_product.update(tech_product_params)
-        format.html { redirect_to @tech_product, notice: 'Tech product was successfully updated.' }
+        format.html { redirect_to tech_products_path, notice: 'Tech product was successfully updated.' }
         format.json { render :show, status: :ok, location: @tech_product }
       else
         format.html { render :edit }
@@ -69,6 +69,6 @@ class TechProductsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def tech_product_params
-      params.require(:tech_product).permit(:name, :description, :code_available, :link)
+      params.require(:tech_product).permit(:name, :description, :code_available, :link, :image)
     end
 end

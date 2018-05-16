@@ -11,47 +11,19 @@
     <div class="tech-products">
       <div class="content">
         <div class="row products">
-          <div class="col-md-4 product text-center">
-            <%= image_tag 'oktopus@2x.png', height: '100px' %>
+          <% @products.each do |product| %>
+            <div class="col-md-4 product text-center">
+              <%= cl_image_tag product.image.path, height: '100px' %>
 
-            <div class="title">
-              Oktopus
+              <div class="title">
+                <%= product.name %>
+              </div>
+
+              <div class="description">
+                <%= markdown(product.description) %>
+              </div>
             </div>
-
-            <div class="description">
-              Governança par amúltiplos dasboards e fontes de dados analíticas com segurança dinâmica de cubos OLAP.
-            </div>
-          </div>
-          
-          <div class="col-md-4 product text-center">
-            <%= image_tag 'tarantula@2x.png', height: '100px' %>
-
-            <div class="title">
-              Tarantulla
-            </div>
-
-            <div class="description mb-3">
-              Agregar dados de diversas fontes web (crawler), de redes sociais de modo organizado e categorizado por contexto.
-            </div>
-
-            <a href="#" class="link">
-              CÓDIGO DISPONÍVEL
-              <span>&nbsp;</span>
-              <%= fa_icon "github" %>
-            </a>
-          </div>
-
-          <div class="col-md-4 product text-center">
-            <%= image_tag 'krab@2x.png', height: '100px' %>
-
-            <div class="title">
-              Krab
-            </div>
-
-            <div class="description">
-              Dados e análise de dados georreferenciados com possibilidade de implementação on premises.
-            </div>
-          </div>
+          <% end %>
         </div>
       </div>
     </div>
