@@ -1,0 +1,33 @@
+<%= render 'layouts/admin_navbar' %>
+
+<div class="container">
+  <% if notice %>
+    <div class="alert alert-success">
+      <%= notice %>
+    </div>
+  <% end %>
+  
+  <% if @subscribers.empty? %>
+    <div class="alert alert-info">
+      Não há subscribers.
+    </div>
+  <% else %>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Email</th>
+          <th></th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @subscribers.each do |subscriber| %>
+          <tr>
+            <td><%= subscriber.email %></td>
+            <td><%= link_to 'Excluir', subscriber, method: :delete, data: { confirm: 'Você tem certeza?' } %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  <% end %>
+</div>

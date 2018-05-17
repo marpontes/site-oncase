@@ -35,6 +35,10 @@ module ApplicationHelper
     controller_name == 'case_products'
   end
 
+  def admin_subscribers_page?
+    controller_name == 'subscribers'
+  end
+
   def markdown(text)
     options = {
       filter_html:     true,

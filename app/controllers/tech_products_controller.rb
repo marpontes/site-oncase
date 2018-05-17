@@ -1,4 +1,5 @@
 class TechProductsController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_tech_product, only: [:show, :edit, :update, :destroy]
 
   # GET /tech_products

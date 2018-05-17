@@ -16,4 +16,5 @@ Rails.application.routes.draw do
   resources :banners
   resources :tech_products
   resources :case_products
+  resources :subscribers
 end

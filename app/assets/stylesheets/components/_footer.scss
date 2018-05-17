@@ -31,17 +31,30 @@ footer {
       border-radius: 4px;
 
       input[type="email"] {
-        width: 55%;
+        width: 52%;
         border: none;
         background: none;
         color: $color-white;
       }
 
       input[type="submit"] {
+        text-align: right;
         background-color: #4682E3;
         border-color: #4682E3;
         border-radius: 27px;
+        padding: .5rem .75rem;
       }
+    }
+  }
+
+  .medias {
+    padding-top: .75em;
+
+    i {
+      padding-right: 1em;
+      font-size: 20px;
+      color: $color-white;
+      opacity: 0.8;
     }
   }
 }
@@ -58,6 +71,18 @@ footer {
   footer {
     .pl-5 {
       padding-left: 1em !important;
+    }
+
+    .receive-content {
+      .input-wrapper {
+        input[type="email"] {
+          width: 100%;
+        }
+
+        input[type="submit"] {
+          margin-top: 1rem;
+        }
+      }
     }
   }
 }

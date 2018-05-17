@@ -148,5 +148,46 @@
         </ul>
       </div>
     </div>
+
+    <div class="row">
+      <div class="col-md-4 pt-4">
+        <div class="receive-content">
+          <h5>Receba conteúdo em primeira mão</h5>
+          <div class="input-wrapper">
+            <form action="/subscribers" data-remote="true" method="POST">
+              <input type="email" name="subscriber[email]" id="email" placeholder="Digite aqui o seu e-mail...">
+              <input type="submit" value="Receber conteúdo" class="btn btn-info">
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 pt-4">
+        <h5>Nos encontre</h5>
+        <div class="social">
+          <div class="medias">
+            <a href="https://www.facebook.com/oncasesolucoes/" target="_blank" class="link">
+              <%= fa_icon 'facebook' %>
+            </a>
+
+            <a href="https://twitter.com/oncase" target="_blank" class="link">
+              <%= fa_icon 'twitter' %>
+            </a>
+
+            <a href="https://www.linkedin.com/company/oncase/" target="_blank" class="link">
+              <%= fa_icon 'linkedin' %>
+            </a>
+
+            <a href="https://medium.com/oncase" target="_blank" class="link">
+              <%= fa_icon 'medium' %>
+            </a>
+
+            <a href="https://github.com/oncase" target="_blank" class="link">
+              <%= fa_icon 'github' %>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </footer>
