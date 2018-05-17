@@ -53,3 +53,11 @@ footer {
 .bg-grey {
   background-color: $color-light-grey;
 }
+
+@media screen and (max-width: 767px) {
+  footer {
+    .pl-5 {
+      padding-left: 1em !important;
+    }
+  }
+}
