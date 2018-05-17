@@ -69,6 +69,6 @@ class TechProductsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def tech_product_params
-      params.require(:tech_product).permit(:name, :description, :code_available, :link, :image)
+      params.require(:tech_product).permit(:name, :description, :code_available, :link, :code_link, :image)
     end
 end

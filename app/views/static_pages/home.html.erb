@@ -2,7 +2,9 @@
   <div class="slider">
     <% @banners.each do |banner| %>
       <div class="text-center">
-        <%= cl_image_tag banner.image.path %>  
+        <%= link_to banner.link, target: "_blank" do %>
+          <%= cl_image_tag banner.image.path %>
+        <% end %>
       </div>
     <% end %>
   </div>

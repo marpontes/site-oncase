@@ -13,8 +13,10 @@
         <div class="row products">
           <% @products.each do |product| %>
             <div class="col-md-4 product text-center">
-              <%= cl_image_tag product.image.path, height: '100px' %>
-
+              <%= link_to product.link, target: "_blank" do %>
+                <%= cl_image_tag product.image.path, height: '100px' %>
+              <% end %>
+              
               <div class="title">
                 <%= product.name %>
               </div>
@@ -22,6 +24,12 @@
               <div class="description">
                 <%= markdown(product.description) %>
               </div>
+              
+              <% if product.code_available %>
+                <%= link_to "CÓDIGO DISPONÍVEL", product.code_link, class: "link" %>
+
+                <%= fa_icon "github" %>
+              <% end %>
             </div>
           <% end %>
         </div>
@@ -56,7 +64,7 @@
           </div>
 
           <div class="row points">
-            <% case_product.case_product_descriptions.each do |point| %>
+            <% case_product.case_product_descriptions.order(position: :asc).each do |point| %>
               <div class="col-md-6">
                 <div class="point">
                   <div class="title">
