@@ -85,5 +85,6 @@ production:
   database: nextcase
   username: nextcase
   password: LaLaLand!@#
+  url: ruby.oncase.com.br
   # socket: /var/run/mysqld/mysqld.sock 
   reconnect: true
