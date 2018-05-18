@@ -85,5 +85,5 @@ production:
   database: nextcase
   username: nextcase
   password: LaLaLand!@#
-  socket: /var/run/mysqld/mysqld.sock 
+  # socket: /var/run/mysqld/mysqld.sock 
   reconnect: true
