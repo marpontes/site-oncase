@@ -15,8 +15,8 @@
 # gem 'pg'
 #
 default: &default
-  adapter: mysql2
-  encoding: utf8
+  adapter: postgresql
+  encoding: unicode
   # For details on connection pooling, see Rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
@@ -79,7 +79,11 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
-  <<: *default
-  database: site-oncase_production
-  username: site-oncase
-  password: <%= ENV['SITE-ONCASE_DATABASE_PASSWORD'] %>
+  adapter: mysql2
+  encoding: utf8
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  database: nextcase
+  username: nextcase
+  password: LaLaLand!@#
+  socket: /var/run/mysqld/mysqld.sock 
+  reconnect: true
