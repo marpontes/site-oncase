@@ -1,5 +1,5 @@
 class SubscribersController < ApplicationController
-  before_action :authenticate_user!
+  before_action :authenticate_user!, except: :create
   before_action :set_subscriber, only: [:show, :edit, :update, :destroy]
 
   # GET /subscribers
