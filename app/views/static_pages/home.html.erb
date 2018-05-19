@@ -1,12 +1,21 @@
 <div class="home">
-  <div class="slider">
-    <% @banners.each do |banner| %>
-      <div class="text-center">
-        <%= link_to banner.link, target: "_blank" do %>
-          <%= cl_image_tag banner.image.path %>
-        <% end %>
-      </div>
-    <% end %>
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <% @banners.each_with_index do |banner, index| %>
+        <li data-target="#carouselExampleIndicators" data-slide-to="<%= index %>" class="<%= 'active' if index == 0 %>"></li>
+      <% end %>
+    </ol>
+    <div class="carousel-inner">
+      <% @banners.each_with_index do |banner, index| %>
+        <div class="carousel-item <%= 'active' if index == 0 %>">
+          <div class="text-center">
+            <%= link_to banner.link, target: '_blank' do %>
+              <%= cl_image_tag banner.image.path %>
+            <% end %>
+          </div>
+        </div>
+      <% end %>
+    </div>
   </div>
   
   <%= render 'static_pages/home/about_us' %>
@@ -14,12 +23,3 @@
   <%= render 'static_pages/home/clients' %>
   <%= render 'static_pages/home/campus' %>
 </div>
-
-<script>
-  var slider = tns({
-    container: '.slider',
-    items: 1,
-    slideBy: 'page',
-    autoplay: true
-  });
-</script>

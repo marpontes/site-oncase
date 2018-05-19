@@ -1,5 +1,7 @@
 .home {
   section.about-us {
+    padding-top: 3em;
+    
     .bg-top {
       width: 100%;
     }
@@ -203,17 +205,17 @@
 
 @media screen and (max-width: 767px) {
   .home {
-    .slider {
+    .carousel-item {
+      padding: 0 1em;
+
       img {
         width: 100%;
       }
     }
 
-    .tns-outer {
-      padding: 0 1em !important;
-    }
-
     section.about-us {
+      padding-top: 5em;
+
       .bg-bottom {
         margin-top: -20px;
       }
@@ -226,7 +228,7 @@
         }
 
         .description-wrapper {
-          padding: 2em 1em;
+          padding: 2em 0;
 
           > .title {
             font-size: 40px;
@@ -238,10 +240,16 @@
           }
 
           > .actions {
-            padding-top: 1.5em;
+            padding-top: 1em;
+
+            div {
+              padding-top: 1em;
+            }
 
             .social {
-              padding-top: 1.5em;
+              .title {
+                padding-top: 0;
+              }
               
               .medias {
                 padding-top: .75em;

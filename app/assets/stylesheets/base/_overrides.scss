@@ -36,3 +36,20 @@
 .CodeMirror, .CodeMirror-scroll {
 	min-height: 100px;
 }
+
+.carousel-indicators {
+  bottom: -5em !important;
+
+  li {
+    background-color: $color-white;
+    border: 1px solid #dcdcdc;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    margin-right: .5em;
+
+    &.active {
+      background-color: $color-light-blue;
+    }
+  }
+}

@@ -214,8 +214,19 @@
       padding-top: 2em;
 
       .content {
+        > .title {
+          font-size: 35px;
+          line-height: 40px;
+        }
+        
         > .description {
           padding-top: 1em;
+        }
+
+        > .category {
+          img {
+            margin: .5em 0;
+          }
         }
       }
     }
