@@ -61,6 +61,10 @@ class SubscribersController < ApplicationController
     end
   end
 
+  def export
+    send_data Subscriber.to_csv, filename: "subscribers-#{Date.today}.csv"
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_subscriber

@@ -29,7 +29,7 @@ class TechProductsController < ApplicationController
 
     respond_to do |format|
       if @tech_product.save
-        format.html { redirect_to @tech_product, notice: 'Tech product was successfully created.' }
+        format.html { redirect_to tech_products_path, notice: 'Tech product was successfully created.' }
         format.json { render :show, status: :created, location: @tech_product }
       else
         format.html { render :new }

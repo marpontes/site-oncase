@@ -56,7 +56,16 @@
           <div class="col-md-3 member text-center <%= 'shifted' if i.odd? %>">
             <%= cl_image_tag member.avatar.path, class: "photo" %>
             <div class="name"><%= member.name %></div>
-            <div class="function"><%= member.function %></div>
+            <div class="function">
+              <%= member.function %>
+
+              <% if member.linkedin.present? %>
+                <span>&nbsp;</span>
+                <%= link_to member.linkedin, target: '_blank' do %>
+                  <%= fa_icon 'linkedin' %>
+                <% end %>
+              <% end %>
+            </div>
           </div>
         <% end %>
       </div>

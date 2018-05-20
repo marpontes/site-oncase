@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180517180656) do
+ActiveRecord::Schema.define(version: 20180520004313) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -57,16 +57,6 @@ ActiveRecord::Schema.define(version: 20180517180656) do
     t.integer "image_height"
   end
 
-  create_table "cases", force: :cascade do |t|
-    t.string "category"
-    t.string "name"
-    t.text "description"
-    t.integer "color"
-    t.string "link"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "jobs", force: :cascade do |t|
     t.string "name"
     t.text "description"
@@ -81,32 +71,7 @@ ActiveRecord::Schema.define(version: 20180517180656) do
     t.string "function"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-  end
-
-  create_table "pages", force: :cascade do |t|
-    t.string "title"
-    t.jsonb "data"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "product_points", force: :cascade do |t|
-    t.bigint "product_id"
-    t.string "name"
-    t.text "description"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["product_id"], name: "index_product_points_on_product_id"
-  end
-
-  create_table "products", force: :cascade do |t|
-    t.string "name"
-    t.text "description"
-    t.string "link"
-    t.integer "color"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.string "category"
+    t.string "linkedin"
   end
 
   create_table "subscribers", force: :cascade do |t|
@@ -134,8 +99,8 @@ ActiveRecord::Schema.define(version: 20180517180656) do
     t.integer "sign_in_count", default: 0, null: false
     t.datetime "current_sign_in_at"
     t.datetime "last_sign_in_at"
-    t.inet "current_sign_in_ip"
-    t.inet "last_sign_in_ip"
+    t.string "current_sign_in_ip"
+    t.string "last_sign_in_ip"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["email"], name: "index_users_on_email", unique: true
@@ -143,5 +108,4 @@ ActiveRecord::Schema.define(version: 20180517180656) do
   end
 
   add_foreign_key "case_product_descriptions", "case_products"
-  add_foreign_key "product_points", "products"
 end

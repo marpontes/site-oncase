@@ -28,6 +28,11 @@
   </div>
 
   <div class="form-group">
+    <%= form.label :linkedin %>
+    <%= form.text_field :linkedin, id: :member_linkedin, class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
     <%= form.label :avatar %>
     <%= form.attachinary_file_field :avatar %>
   </div>
