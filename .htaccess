@@ -1,2 +1,5 @@
 PassengerRuby /home/oncasec/.rvm/wrappers/ruby-2.5.0@oncase/ruby
 PassengerAppEnv production
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301] 
